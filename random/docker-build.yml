@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  randomizer:
+    build:
+      context: .
+      dockerfile: ./Dockerfile_rand
+    image: dheeru/randomizer:latest
+    restart: always
+  example:
+    build:
+      context: .
+      dockerfile: ./Dockerfile_exmp
+    image: dheeru/exmp:latest
+    restart: always 
